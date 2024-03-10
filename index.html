@@ -182,29 +182,51 @@
             <div class="container flex-row">
                 <div class="book-table flex-col padding-md">
 
-                    <h1>Reserve a table</h1>
-                    <p class="info">To help us find the best table for you, 
+                    <h1 class="font-lg">Reserve a table</h1>
+                    <p class="info padding-top-sm padding-bottom-sm">To help us find the best table for you, 
                         select the preferred party size, date, and time of your reservation.</p>
                   
                     <form action="post" class="reservation-form">
 
                         <label for="party-size ">Party size</label>
-                        <input type="text" name="party-size" id="party-size">
+                        <select name="party-size" id="party-szie" required>
+                            <option value="">Select an option</option>
+                            <option value="1">1 guest</option>
+                            <option value="2">2 guest</option>
+                            <option value="2">3 guest</option>
+                            <option value="2">4 guest</option>
+                            <option value="2">5 guest</option>
+                            <option value="2">6 guest</option>
+                            <option value="greatere">More guests</option>
+                        </select>
+                        <!-- <input type="text" name="more-guests" id="more-guests"> -->
 
                         <label for="date">date</label>
                         <input type="date" name="date" id="date">
 
-                        <button class="red-bg white-text text-upper margin-top-sm">Find a table</button>
+                        <label for="vegetarian">Would you be requiring the vegetarian option?</label>
+                        <select name="vegetarian" id="vegetarian" required>
+                            <option value="">Select an option</option>
+                            <option value="y">Yes</option>
+                            <option value="n">No</option>
+                        </select>
+
+                        <button class="red-bg white-text text-upper margin-top-sm reservation-btn">Find a table</button>
                     </form>
                 </div>
 
                 <div class="how-to-book flex-col padding-md">
-                    <h1>Fast and easy</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    <h1 class="text-center font-sm">Fast and easy</h1>
+                    <h1 class="text-center font-lg text-capitalize font-md">Book online or call us</h1>
+                    <p class="padding-top-sm padding-bottom-md text-center line-height-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                          Blanditiis totam ipsam maiores est quas
                          repellat rem quod nesciunt quo magnam recusandae reiciendis consequuntur 
-                         laudantium perferendis quibusdam, iure praesentium voluptas modi.</p>
+                         laudantium perferendis quibusdam, iure praesentium voluptas modi.
+                    </p>
 
+                    <div class="contact-us text-center">
+                        <a href="#" class="button-md poppins-semibold white-bg">Find us</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -220,7 +242,7 @@
         <div class="container flex-evenly margin-top-md padding-top-lg padding-bottom-lg">
 
             <div class="subscription flex-col">
-                <h3>
+                <h3 class="padding-bottom-md">
                     Join the EU Club & Get $10 off Your Next Visit
                 </h3>
 
@@ -228,7 +250,7 @@
                     
                     <div class="flex-box">
                         <input type="email" name="" id="" placeholder="Email" required>
-                        <button type="submit">join</button>
+                        <button type="submit" class="red-bg subscribe-btn">join</button>
                     </div>
                     
                 </form>
@@ -238,22 +260,22 @@
                 <div class="quick-links flex-col">
                     <h3 class="white-text">Quick links</h3>
                     <a href="#">Menu</a>
-                    <a href="#">Menu</a>
-                    <a href="#">Menu</a>
+                    <a href="#">Book a table</a>
+                    <a href="#">About</a>
                 </div>
 
                 <div class="contact flex-col">
-                    <h3 class="white-text">Quick links</h3>
-                    <a href="#">Menu</a>
-                    <a href="#">Menu</a>
-                    <a href="#">Menu</a>
+                    <h3 class="white-text">Contact</h3>
+                    <a href="#">Hours and Locations</a>
+                    <a href="#">Careers</a>
+                    <a href="#">EU restuarant</a>
                 </div>
 
                 <div class="follow-links flex-col">
-                    <h3 class="white-text">Quick links</h3>
-                    <a href="#">Menu</a>
-                    <a href="#">Menu</a>
-                    <a href="#">Menu</a>
+                    <h3 class="white-text">Follow us</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
                 </div>
             </div>
 
