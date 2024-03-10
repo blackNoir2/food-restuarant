@@ -14,6 +14,7 @@
     --font-size-lg : 40px;
     --font-size-md: 30px;
     --font-size-sm: 16px;
+    --font-size-xsm: 14px;
 
     --line-height-sm: 1.2;
     --line-height-md: 1.5;
@@ -210,31 +211,9 @@ blockquote {
     font-style: italic;
   }
   
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
   
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
+ 
 
-  
 
   
 
@@ -266,6 +245,19 @@ nav .nav-container .logo {
   font-size: var(--font-size-sm);
  }
  
+ .font-xsm {
+  font-size: var(--font-size-xsm);
+ }
+
+
+ /* The font weight */
+ .bold {
+  font-weight: bold;
+ }
+
+ .bolder {
+  font-weight: bolder;
+ }
 
  .nav-link {
     /* font-weight: bold; */
@@ -668,8 +660,46 @@ label {
     padding: 20px;
   }
 
+  .button-sm {
+    border: 1px solid white;
+    padding: 5px;
+  }
+
   .subscribe-btn {
     border: 1px solid white;
     background: lavender;
     text-transform: capitalize;
   }
+
+  .starters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-auto-rows: auto; 
+    gap: 20px; 
+  }
+  
+ .menu-item-card {
+  text-align: center;
+  margin-bottom: 10px;
+ }
+
+ #menu {
+   background: var(--color-pink);
+   
+ }
+
+ #menu .container {
+   width: 90%;
+   margin: auto;
+ }
+ .menu-item-description {
+  font-size: 15px;
+  font-weight: lighter;
+ }
+
+ hr {
+  color: lavender;
+  opacity: 0.2;
+  width: 50%;
+  margin: auto;
+ }
