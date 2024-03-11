@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/css.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="banner">
+
+        <p class="white-text text-capitalize flex-center">
+            Subscribe to EU restuarant and get £10 off your next visit
+        </p>
+
+
+    </div>
+
+    <nav>
+        <div class="nav-container">
+
+            <div class="logo flex-center roboto-thin font-lg">
+                <img src="static/img/logo.png" alt="logo" class="logo-img">
+                <p class="logo--slogan">Where Flavour Reigns Supreme</p>
+
+            </div>
+
+            <div class="body flex-evenly">
+                <a href="#" class="nav-link">home</a>
+                <a href="#" class="nav-link">menu</a>
+                <a href="#" class="nav-link">book a table</a>
+                <a href="#" class="nav-link">about</a>
+                <a href="#" class="nav-link">hours and location</a>
+                <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link"><img src="" alt="">Login</a>
+            </div>
+
+
+        </div>
+    </nav>
+
+
+    <main>
+        <section id="make-a-reseveration">
+            <div class="container">
+                <h1>Make a reservation</h1>
+                <p>To help us find the best table for you, select the preferred party size, date, and time of your reservation.</p>
+        
+                <form action="post">
+                    <div class="form-container montserrat-bold">
+                        <div class="form-group">
+                            <label for="party-size">Party size</label>
+                            <select name="party-size" id="party-size" required class="form-element">
+                                <option value="">Select an option</option>
+                                <option value="1">1 guest</option>
+                                <option value="2">2 guests</option>
+                                <option value="3">3 guests</option>
+                                <option value="4">4 guests</option>
+                                <option value="5">5 guests</option>
+                                <option value="6">6 guests</option>
+                                <option value="more-guests">More guests</option>
+                            </select>
+                        </div>
+                        <div class="form-group display-none">
+                            <label for="more-guests">Number of guests</label>
+                            <input type="number" name="number-of-guests" id="number-of-guests" 
+                            required class="form-element" min="1" max="30" step="1">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" name="date" id="date" required class="form-element">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="appointment-time">Time</label>
+                            <select id="appointment-time" required class="form-element">
+                                <option value="9:30 AM">9:30 AM</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="10:30 AM">10:30 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="11:30 AM">11:30 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="12:30 PM">12:30 PM</option>
+                                <option value="1:00 PM">1:00 PM</option>
+                                <option value="1:30 PM">1:30 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="2:30 PM">2:30 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="3:30 PM">3:30 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                                <option value="4:30 PM">4:30 PM</option>
+                                <option value="5:00 PM">5:00 PM</option>
+                                <option value="5:30 PM">5:30 PM</option>
+                                <option value="6:00 PM">6:00 PM</option>
+                                <option value="6:30 PM">6:30 PM</option>
+                                <option value="7:00 PM">7:00 PM</option>
+                                <option value="7:30 PM">7:30 PM</option>
+                                <option value="8:00 PM">8:00 PM</option>
+                                <option value="8:30 PM">8:30 PM</option>
+                                <option value="9:00 PM">9:00 PM</option>
+                                <option value="9:30 PM">9:30 PM</option>
+                                <option value="10:00 PM">10:00 PM</option>
+                                <option value="10:30 PM">10:30 PM</option>
+                                <option value="11:00 PM">11:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    <p>Choose an available time slot:</p>
+
+                    <div class="time-slots">
+
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+                        <div class="time-slot">
+                            9:30 AM
+                        </div>
+
+
+
+
+                    </div>
+                    <button class="red-bg white-text text-upper margin-top-sm reservation-btn">Find a table</button>
+                </form>
+            </div>
+        </section>
+        
+
+    </main>
+
+
+
+
+    <footer>
+
+        <div class="container flex-evenly margin-top-md padding-top-lg padding-bottom-lg">
+
+            <div class="subscription flex-col">
+                <h3 class="padding-bottom-md">
+                    Join the EU Club & Get $10 off Your Next Visit
+                </h3>
+
+                <form action="" method="post" class="footer-form">
+
+                    <div class="flex-box">
+                        <input type="email" name="" id="" placeholder="Email" required>
+                        <button type="submit" class="red-bg subscribe-btn">join</button>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="links flex-row">
+                <div class="quick-links flex-col">
+                    <h3 class="white-text">Quick links</h3>
+                    <a href="#">Menu</a>
+                    <a href="#">Book a table</a>
+                    <a href="#">About</a>
+                </div>
+
+                <div class="contact flex-col">
+                    <h3 class="white-text">Contact</h3>
+                    <a href="#">Hours and Locations</a>
+                    <a href="#">Careers</a>
+                    <a href="#">EU restuarant</a>
+                </div>
+
+                <div class="follow-links flex-col">
+                    <h3 class="white-text">Follow us</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+    <script src="static/js/script.js" type="module"></script>
+</body>
+
+</html>
