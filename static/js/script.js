@@ -4,8 +4,12 @@ const navigatorLinksElement = document.querySelectorAll(".navigator a");
 const navigatorElement      = document.querySelector(".navigator");
 
 
+
+
 closeIcon.addEventListener("click", handleCloseIconClick);
 openIcon.addEventListener("click", handleOpenClickIcon);
+
+
 
 
 
@@ -42,4 +46,32 @@ function handleOpenClickIcon() {
 }
 
 
+
+
+function createTimeSlots() {
+
+    const timeSlotsContainer = document.querySelector(".time-slots");
+    const selectTimeOptions  = document.querySelector("#appointment-time");
+    const options            = selectTimeOptions.options;
+    
+
+    for (let i =0; i < options.length; i++) {
+        if (options[i].value) {
+            const createTimeSlotElement = document.createElement("div");
+            createTimeSlotElement.className = "time-slot";
+            createTimeSlotElement.textContent = options[i].value;
+   
+            timeSlotsContainer.appendChild(createTimeSlotElement);
+        }
+        
+
+    }
+  
+  
+
+}
+
+
+
 toggleNavigatorMenu();
+createTimeSlots();

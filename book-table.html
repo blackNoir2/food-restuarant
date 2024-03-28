@@ -29,13 +29,12 @@
             </div>
 
             <div class="body flex-evenly">
-                <a href="#" class="nav-link">home</a>
-                <a href="#" class="nav-link">menu</a>
-                <a href="#" class="nav-link">book a table</a>
-                <a href="#" class="nav-link">about</a>
-                <a href="#" class="nav-link">hours and location</a>
-                <a href="#" class="nav-link">Blog</a>
-                <a href="#" class="nav-link"><img src="" alt="">Login</a>
+                <a href="/index.html" class="nav-link">home</a>
+                <a href="/menu.html" class="nav-link">menu</a>
+                <a href="/book-table.html" class="nav-link">book a table</a>
+                <a href="/about.html" class="nav-link">about</a>
+                <a href="/hours-and-location.html" class="nav-link">hours and location</a>
+                <a href="login.html" class="nav-link"><img src="" alt="">Login</a>
             </div>
 
 
@@ -46,11 +45,14 @@
     <main>
         <section id="make-a-reseveration">
             <div class="container">
-                <h1>Make a reservation</h1>
-                <p>To help us find the best table for you, select the preferred party size, date, and time of your reservation.</p>
+                <div class="usage padding-top-lg padding-bottom-md">
+                    <h1 class="text-center font-lg title padding-top-lg">Make a reservation</h1>
+                    <p class="text-center padding-top-sm">To help us find the best table for you, select the preferred party size, date, and time of your reservation.</p>
         
+                </div>
+               
                 <form action="post">
-                    <div class="form-container montserrat-bold">
+                    <div class="form-container">
                         <div class="form-group">
                             <label for="party-size">Party size</label>
                             <select name="party-size" id="party-size" required class="form-element">
@@ -78,6 +80,7 @@
                         <div class="form-group">
                             <label for="appointment-time">Time</label>
                             <select id="appointment-time" required class="form-element">
+                                <option value="">Select time</option>
                                 <option value="9:30 AM">9:30 AM</option>
                                 <option value="10:00 AM">10:00 AM</option>
                                 <option value="10:30 AM">10:30 AM</option>
@@ -110,72 +113,21 @@
                         </div>
                     </div>
                     
-                    <hr>
-                    <p>Choose an available time slot:</p>
+                    <hr class="dividor">
+                    <div class="usage padding-top-sm padding-bottom-sm">
+                        <p>Choose an available time slot:</p>
+                    </div>
+                 
 
                     <div class="time-slots">
 
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-                        <div class="time-slot">
-                            9:30 AM
-                        </div>
-
-
-
+                      
+                    </div>
+                    <div class="usage text-center">
+                        <button class="red-bg white-text text-upper margin-top-sm button-md">Reserve table</button>
 
                     </div>
-                    <button class="red-bg white-text text-upper margin-top-sm reservation-btn">Find a table</button>
+
                 </form>
             </div>
         </section>
@@ -233,7 +185,7 @@
 
     </footer>
 
-    <script src="static/js/script.js" type="module"></script>
+    <script src="static/js/booking.js"></script>
 </body>
 
 </html>
